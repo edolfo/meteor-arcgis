@@ -1,3 +1,9 @@
 <ul>
-    <li ng-repeat="task in taskList.tasks">{{ task.text }}</li>
+    <li ng-repeat="task in taskList.tasks">
+        {{ task.text }}
+        <button ng-click="taskList.removeTask(task)" class="right">X</button>
+    </li>
 </ul>
+<form class="new-task" ng-submit="taskList.addTask(newTask)">
+    <input type="text" name="task" ng-model="taskList.newTask" placeholder="Add a new task">
+</form>
