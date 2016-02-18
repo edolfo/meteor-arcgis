@@ -6,10 +6,18 @@ let todoModuleService = todoModule.service('todoApp.db.tasks', function(){
         return Tasks.find({});
     }
     function insert(task) {
-        return Tasks.insert({text: task});
+        return Tasks.insert({text: task}, (err) => {
+            if (err) {
+                console.error(err);
+            }
+        });
     }
     function remove(task) {
-        return Tasks.remove({_id: task._id});
+        return Tasks.remove({_id: task._id}, (err) => {
+            if (err) {
+                console.error(err);
+            }
+        });
     }
     return {
         tasks: tasks,
