@@ -23,3 +23,12 @@ This should get the base app up and running
 
 ### Installation without Vagrant
 (unknown, but assumed to be much easier)
+
+### TODO
+
+* OAuth integration
+* Arcgis integration
+* Server-side database access permissions/patterns
+* Sort/filter/paginate
+* Mobile cross-compilation
+* Testing
