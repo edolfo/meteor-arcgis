@@ -1,13 +1,10 @@
 <body>
     <!-- TODO: factor out this div into a template -->
     <div class="container"
-    ng-app="todo"
-    ng-controller="todoCtrl">
+    ng-app="todoApp">
         <header>
             <h1>TODO: list</h1>
         </header>
-        <ul>
-            <li ng-repeat="task in tasks">{{ task.text }}</li>
-        </ul>
+        <task-list></task-list>
     </div>
 </body>

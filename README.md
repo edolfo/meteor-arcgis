@@ -12,9 +12,14 @@ to obtain a lock on the mongo file.
 7. `cd app`
 8. `mv /vagrant/app/.meteor ~/app`
 9. `ln -s ~/app .meteor`
-10. `meteor`
+10. `meteor remove blaze-html-templates`
+11. `meteor remove ecmascript`
+12. `meteor add angular`
+13. `meteor add angularui:angular-ui-router`
+14. `meteor add universe:modules`
+15. `meteor`
 
 This should get the base app up and running
 
 ### Installation without Vagrant
-1. `meteor app`
+(unknown, but assumed to be much easier)
