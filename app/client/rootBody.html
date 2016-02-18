@@ -1,10 +1,10 @@
 <body>
-    <!-- TODO: factor out this div into a template -->
-    <div class="container"
+    <div
+    class="container"
     ng-app="todoApp">
-        <header>
-            <h1>TODO: list</h1>
-        </header>
-        <task-list></task-list>
+        <h1>
+            <a href="/tasks">Home</a>
+        </h1>
+        <div ui-view=""></div>
     </div>
 </body>
