@@ -10,7 +10,9 @@ todoModule.config([
         $locationProvider.html5Mode(true);
         $stateProvider.state('tasks', {
             url: '/tasks',
-            template: '<task-list></task-list>'
+            views: {
+                main: { template: '<task-list></task-list>' }
+            }
         });
         $urlRouterProvider.otherwise('/tasks');
     }
